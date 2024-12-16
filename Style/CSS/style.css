@@ -1,0 +1,244 @@
+/* ================================================
+   Global Styles
+================================================ */
+:root {
+  --primary-bg: #ffffff; /* White for main background */
+  --primary-text: #0b3981; /* Rich blue for primary text */
+  --accent: #0b3981; /* Deep blue for accent elements */
+  --secondary-text: #d9d9d9; /* Neutral dark gray for secondary text */
+  --hover-accent: #4a78b7; /* Lighter blue for hover effects */
+  --hero-bg: #f5f5f5; /* Light gray for hero sections */
+  --error-text: #ff4c4c; /* Bright red for errors */
+  --card-bg: #ffffff; /* White for cards and containers */
+  --border-color: #dddddd; /* Light gray for subtle borders */
+  --button-bg: #0b3981; /* Deep blue for buttons */
+  --button-hover: #12509b; /* Lighter blue for button hover */
+}
+
+* {
+  font-family: Poppins, sans-serif;
+  transition: all ease 300ms;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  color: var(--primary-text);
+  background-color: var(--primary-bg);
+  margin: 0;
+}
+
+/* ================================================
+   Hero Section
+================================================ */
+
+.hero {
+  border-radius: 5rem;
+  margin: 0 10px 0 10px;
+  border: 5px solid var(--accent);
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--hero-bg) url("../Imgs/hero.png") no-repeat center center /
+    cover;
+  color: var(--border-color);
+}
+
+.hero-overlay {
+  position: absolute;
+  border-radius: 4.6rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: var(--primary-text);
+  background-color: var(--secondary-text);
+  border: 3px solid var(--accent);
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.hero-content button:hover {
+  background-color: var(--hover-accent);
+  color: #dddddd;
+}
+
+/* ================================================
+   Featured Posts
+================================================ */
+
+.featured-posts {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.featured-posts h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Styling for each post */
+.post {
+  position: relative;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 2rem;
+  border: 3px solid var(--accent);
+  color: white;
+  overflow: hidden;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Dark overlay for background */
+.post-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Darken the background */
+  z-index: 1;
+}
+
+/* Post content on top of the overlay */
+.post h3,
+.post p {
+  position: relative;
+  z-index: 2; /* Make sure text is above the overlay */
+}
+
+.post h3 {
+  font-size: 1.5rem; /* Adjust font size to fit better */
+  line-height: 1.4; /* Adjust line height */
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Limit the text to 3 lines */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+  z-index: 2;
+}
+
+/* Date in the bottom-right corner */
+.post-date {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.8rem;
+  color: #f0f0f0;
+  font-style: italic;
+  z-index: 2; /* Make sure date is above the overlay */
+}
+
+/* Space between "Read More" and description */
+.post a {
+  margin-top: 10px;
+  font-weight: 900;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  z-index: 2; /* Ensure link is above overlay */
+  padding: 0.75rem 1.5rem;
+  color: var(--primary-text);
+  background-color: var(--secondary-text);
+  border: 3px solid var(--accent);
+  border-radius: 1.5rem;
+  display: inline;
+}
+
+.post a:hover {
+  background-color: var(--hover-accent);
+  color: #dddddd;
+}
+
+.post:hover {
+  scale: 1.1;
+  transition: all ease 300ms;
+}
+
+/* Adjust layout of the post grid */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Responsive fixes for small screens */
+@media (max-width: 768px) {
+  .featured-posts {
+    padding: 0.5rem;
+  }
+
+  .post-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust column width */
+    gap: 15px; /* Reduce gaps */
+  }
+
+  .post {
+    padding: 15px; /* Reduce padding */
+    height: auto; /* Allow flexible height */
+  }
+
+  .post h3 {
+    font-size: 1.2rem; /* Scale down font size */
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+  }
+
+  .post a {
+    padding: 0.5rem 1rem; /* Reduce padding on buttons */
+    font-size: 0.9rem; /* Adjust button font size */
+  }
+
+  .post-date {
+    font-size: 0.7rem; /* Reduce date font size */
+  }
+}
+
+/* For ultra-small screens */
+@media (max-width: 480px) {
+  .post-grid {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .post {
+    margin: 5px; /* Reduce margin for tight spaces */
+  }
+
+  .post h3 {
+    font-size: 1rem; /* Further scale down font size */
+  }
+
+  .post p {
+    padding: 0.4rem 0.8rem; /* Adjust button padding */
+    font-size: 0.8rem; /* Smaller font for buttons */
+  }
+}
+
+

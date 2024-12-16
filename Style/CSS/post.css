@@ -1,0 +1,192 @@
+/* ================================================
+   Global Styles
+================================================ */
+:root {
+  --primary-bg: #ffffff; /* White for main background */
+  --primary-text: #1a1a1a; /* Dark gray for primary text */
+  --accent: #0056b3; /* Deep blue for accent elements */
+  --hover-accent: #0073e6; /* Brighter blue for hover effects */
+  --hero-bg: #f9f9f9; /* Very light gray for hero sections */
+  --error-text: #e63946; /* Muted red for errors */
+  --card-bg: #f7f7f7; /* Soft gray for cards and containers */
+  --border-color: #cccccc; /* Subtle gray for borders */
+  --button-bg: #0056b3; /* Deep blue for buttons */
+  --button-hover: #0073e6; /* Brighter blue for button hover */
+}
+
+* {
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--primary-text);
+  background-color: var(--primary-bg);
+  margin: 0;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: var(--accent);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* ==========================================
+   Article Content Styling
+========================================== */
+article {
+  font-size: 1rem;
+  color: var(--primary-text);
+}
+
+/* Headings */
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  color: var(--accent);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Paragraphs */
+article p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Blockquotes */
+article blockquote {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--hero-bg);
+  border-left: 5px solid var(--accent);
+  font-style: italic;
+}
+
+article blockquote p {
+  color: var(--secondary-text);
+}
+
+/* Images */
+article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+article a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+article a:hover {
+  color: var(--hover-accent);
+}
+
+/* Lists */
+article ul,
+article ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+article li {
+  margin-bottom: 0.5rem;
+}
+
+/* Code Block Styling */
+article pre {
+  background-color: var(--hero-bg); /* Match light theme */
+  color: var(--primary-text); /* Match text color for light theme */
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+article code {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--accent);
+  padding: 0.2rem 0.4rem;
+  background-color: var(--hero-bg);
+  border-radius: 3px;
+}
+
+/* Table Styling */
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+article th,
+article td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border: 1px solid var(--border-color);
+  color: var(--primary-text);
+}
+
+article th {
+  background-color: var(--accent);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+article td:hover {
+  background-color: var(--hover-accent);
+  color: #ffffff;
+}
+
+article kbd {
+  display: inline-block;
+  font-family: monospace, sans-serif;
+  font-size: 0.9rem;
+  padding: 0.2em 0.4em;
+  background-color: var(--accent);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+/* ================================================
+   Responsive Design
+================================================ */
+
+@media (max-width: 768px) {
+  main {
+    padding: 0.5rem;
+  }
+
+  article table {
+    font-size: 0.9rem;
+  }
+
+  article th,
+  article td {
+    padding: 0.5rem;
+  }
+}

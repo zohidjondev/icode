@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{i}Code Klubi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="Style/CSS/general.css" />
+    <link rel="stylesheet" href="Style/CSS/fonts.css" />
+    <link rel="stylesheet" href="Style/CSS/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="Style/Favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Style/Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Style/Favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="Style/Favicon/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img
+          src="Style/Imgs/logo.png"
+          alt="{i}Code Klubi Logotipi"
+          class="logo"
+        />
+        <button class="menu-toggle" aria-label="Menyuni yoqish yoki o‘chirish">
+          &#9776;
+        </button>
+        <nav>
+          <ul class="navbar">
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="menu.html">Darslar</a></li>
+            <li><a href="about.html">Biz haqimizda</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Wrap all the main content in a container -->
+    <div class="main-content">
+      <main>
+        <section class="hero">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h1>{i}Code Klubiga Xush Kelibsiz</h1>
+            <p>{i}Code bilan dasturlashni o‘zbek tilida o‘rganing.</p>
+            <button onclick="location.href='menu.html'">
+              Darslarni boshlash
+            </button>
+          </div>
+        </section>
+        <section class="featured-posts">
+          <h2>Darslarimiz</h2>
+          <div class="post-grid">
+            <!-- Darslar dinamik tarzda shu yerga qo‘shiladi -->
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>
+          &copy; 2024 {i}Code. Zohidjon Ma’rufov tomonidan yaratilgan va
+          boshqariladi.
+        </p>
+        <div class="social-links">
+          <a
+            href="https://t.me/icode_club"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-telegram-plane"></i>
+            <!-- Telegram uchun Font Awesome ikonkasi -->
+          </a>
+
+          <a
+            href="https://github.com/zohidjondev/icode"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github"></i>
+            <!-- GitHub uchun Font Awesome ikonkasi -->
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <div class="blur-overlay"></div>
+
+    <script src="toggleMenu.js"></script>
+    <script src="featuredPosts.js"></script>
+  </body>
+</html>
