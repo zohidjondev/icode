@@ -23,7 +23,7 @@ body {
   color: var(--primary-text);
   background-color: var(--primary-bg);
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 main {
