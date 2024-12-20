@@ -1,6 +1,7 @@
 # Markdown Style Test
 ![Image](/icode/Posts/Post2/cover.jpg)
 
+
 Welcome to the **Markdown Style Test Post**. This document contains all the possible Markdown styles to help you verify the rendering and styling on your page.
 
 ---

@@ -135,7 +135,7 @@ article li {
 /* Code Block Styling */
 article pre {
   background-color: var(--hero-bg); /* Match light theme */
-  color: var(--primary-text); /* Match text color for light theme */
+  color: var(--primary-text); 
   padding: 1rem;
   border-radius: 5px;
   overflow-x: auto;
@@ -145,8 +145,7 @@ article pre {
 article code {
   font-family: "Courier New", Courier, monospace;
   color: var(--accent);
-  padding: 0.2rem 0.4rem;
-  background-color: var(--secondary-text);
+  /* padding: 0.2rem 0.4rem; */
   border-radius: 3px;
 }
 
@@ -189,6 +188,7 @@ article kbd {
   color: #ffffff;
   white-space: nowrap;
 }
+
 
 /* ================================================
    Fixed Theme Toggle Button
@@ -242,6 +242,42 @@ article img {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Style for [!NOTE] block */
+.note-block {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--card-bg); /* Soft background color */
+  border-left: 4px solid var(--accent); /* Blue accent border */
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.note-block::before {
+  content: "ℹ️"; /* Information icon */
+  font-size: 1.2rem;
+  color: var(--accent); /* Accent color for the icon */
+  margin-right: 0.5rem; /* Space between icon and text */
+}
+
+.note-block-text {
+  color: var(--primary-text); /* Main text color */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Dark Theme Support */
+.dark-theme .note-block {
+  background-color: var(--hero-bg);
+  border-left-color: var(--hover-accent);
+}
+
+.dark-theme .note-block::before {
+  color: var(--hover-accent);
+}
+
 
 /* ================================================
    Dark Mode Image Inversion (Applied when dark theme is activated)

@@ -2,7 +2,7 @@
   {
     "folder": "Post1",
     "title": "1-dars: Kirish",
-    "description": "{i}Code haqida batafsil ma'lumot. Kimlar darsni o'tadi, darsni o'rganishga kirish va boshqalar.",
+    "description": "{i}Code haqida batafsil ma'lumot. Kim darsni o'tkazadi, darsni o'rganishga kirish. Dars o'tkazish tili masalasi. Dasturlashga kirish va qaysi manbalardan foydalanish haqida.",
     "date": "2024-12-17"
   },
   {
@@ -10,5 +10,11 @@
     "title": "2-dars: O'zgaruvchilar",
     "description": "Python dasturlashining asosiy tushunchalari. O'zgaruvchilarni tushunish, oddiy ma'lumot turlari bilan ishlashni o'rganish, sintaksis xatolarini tushunish va tuzatish.",
     "date": "2024-12-19"
+  },
+  {
+    "folder": "Post3",
+    "title": "3-dars: O'zgaruvchilar turi: Matn",
+    "description": "Python dasturida matn (string) bilan ishlashning asosiy usullari. Matnni yaratish va chop etish, o'zgaruvchilar bilan bog'lash, matn ko'rinishini o'zgartirish metodlari . F-stringlar. ",
+    "date": "2024-12-21"
   }
 ]
