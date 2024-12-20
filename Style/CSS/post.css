@@ -14,6 +14,24 @@
   --button-hover: #0073e6; /* Brighter blue for button hover */
 }
 
+/* Dark Theme Variables */
+.dark-theme {
+  --primary-bg: #121212;
+  --primary-text: #ffffff;
+  --accent: #0056b3; /* Deep blue for accent elements */
+  --hover-accent: #0073e6; /* Brighter blue for hover effects */
+  --secondary-text: #444444;
+  --hero-bg: #1e1e1e;
+  --error-text: #e63946; /* Muted red for errors */
+  --card-bg: #2c2c2c;
+  --border-color: #333333;
+  --button-bg: #444444;
+  --button-hover: #5a5a5a;
+}
+
+/* ================================================
+   Global Styles
+================================================ */
 * {
   font-family: Poppins, sans-serif;
   box-sizing: border-box;
@@ -128,7 +146,7 @@ article code {
   font-family: "Courier New", Courier, monospace;
   color: var(--accent);
   padding: 0.2rem 0.4rem;
-  background-color: var(--hero-bg);
+  background-color: var(--secondary-text);
   border-radius: 3px;
 }
 
@@ -170,6 +188,66 @@ article kbd {
   border-radius: 4px;
   color: #ffffff;
   white-space: nowrap;
+}
+
+/* ================================================
+   Fixed Theme Toggle Button
+================================================ */
+.toggle-theme-btn {
+  position: fixed; /* Always stays in the same spot */
+  bottom: 20px; /* Distance from the bottom */
+  left: 20px; /* Distance from the left */
+  background-color: var(--button-bg, #444); /* Default button background */
+  color: var(--button-color, #fff); /* Default button text/icon color */
+  border: none;
+  border-radius: 50%; /* Circular shape */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  z-index: 9999; /* Ensure it's above all content */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-theme-btn:hover {
+  background-color: var(--button-hover, #666); /* Button color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.toggle-theme-btn:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+}
+
+.toggle-theme-btn i {
+  font-size: 1.2rem; /* Icon size */
+}
+
+/* ==========================================
+   Article Content Styling
+========================================== */
+article {
+  font-size: 1rem;
+  color: var(--primary-text);
+}
+
+/* Images */
+article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ================================================
+   Dark Mode Image Inversion (Applied when dark theme is activated)
+================================================ */
+.dark-theme article img {
+  filter: brightness(0.5); /* Darken images when dark theme is active */
 }
 
 /* ================================================

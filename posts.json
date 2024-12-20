@@ -4,5 +4,11 @@
     "title": "1-dars: Kirish",
     "description": "{i}Code haqida batafsil ma'lumot. Kimlar darsni o'tadi, darsni o'rganishga kirish va boshqalar.",
     "date": "2024-12-17"
+  },
+  {
+    "folder": "Post2",
+    "title": "2-dars: O'zgaruvchilar",
+    "description": "Python dasturlashining asosiy tushunchalari. O'zgaruvchilarni tushunish, oddiy ma'lumot turlari bilan ishlashni o'rganish, sintaksis xatolarini tushunish va tuzatish.",
+    "date": "2024-12-19"
   }
 ]

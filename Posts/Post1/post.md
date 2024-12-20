@@ -119,7 +119,7 @@ Kitob ingliz tilida, lekin men har doim darsga uni birinchi ingliz tilidan tarji
 
 ![Image](/icode/Posts/Post1/17.jpg)
 
-Darslarimiz Payshanba va Shanba kunlari bo'lib o'tadi, va maktabning 3-choragidan boshlab Seshanba kuni ham darslar qo'shiladi. Oylik to'lov hozircha `50.000` so'm.Bu faqat o'tkazilgan vaqt va aqliy mehnat uchun. Lekin tanlovlarda pul mukofotlari bo'ladi. ;)
+Darslarimiz Payshanba va Shanba kunlari bo'lib o'tadi, va maktabning 3-choragidan boshlab Seshanba kuni ham darslar qo'shiladi.
 
 ---
 
